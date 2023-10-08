@@ -2,5 +2,4 @@ opencv-python
 Pillow
 numpy
 torch
-streamlit
 torchvision
