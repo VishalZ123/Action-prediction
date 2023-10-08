@@ -9,11 +9,11 @@ from models import Net3D, Model_Improved
 
 # original model
 model = Net3D()
-model.load_state_dict(torch.load('./model.pth'), map_location=torch.device('cpu'))
+model.load_state_dict(torch.load('./model.pth', map_location=torch.device('cpu')))
 
 # improved model
 model_improved = Model_Improved()
-model_improved.load_state_dict(torch.load('./model_improved.pth'), map_location=torch.device('cpu'))
+model_improved.load_state_dict(torch.load('./model_improved.pth', map_location=torch.device('cpu')))
 
 
 h, w = 128, 128
