@@ -13,7 +13,7 @@ model.load_state_dict(torch.load('./model.pth'), map_location='cpu')
 
 # improved model
 model_improved = Model_Improved()
-model_improved.load_state_dict(torch.load('./model_improved.pth'))
+model_improved.load_state_dict(torch.load('./model_improved.pth'), map_location='cpu')
 
 
 h, w = 128, 128
